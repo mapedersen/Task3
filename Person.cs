@@ -16,13 +16,12 @@ namespace Task3
 
         public int Age 
         {
-            get 
-            {
-                return _age;
-            }
+            get { return _age; }
             set 
             {
-                if (value > 0)
+                if (value < 0)
+                    throw new ArgumentException("Age cannot be less than 0");
+                else if (value > 0)
                 {
                     _age = value;
                 }
