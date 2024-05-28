@@ -13,5 +13,20 @@ namespace Task3
         private string _lName;
         private int _height;
         private int _weight;
+
+        public int Age 
+        {
+            get 
+            {
+                return _age;
+            }
+            set 
+            {
+                if (value > 0)
+                {
+                    _age = value;
+                }
+            } 
+        }
     }
 }
