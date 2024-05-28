@@ -21,7 +21,11 @@
                 PersonHandler personHandler = new PersonHandler();
 
                 // Create a new Person object
-                personHandler.CreatePerson(15, "Marcus", "Pedersen", 1.87, 85);
+                personHandler.CreatePerson(27, "Marcus", "Pedersen", 1.87, 85);
+                personHandler.CreatePerson(52, "Stefan", "Johanneson", 1.37, 45);
+                personHandler.CreatePerson(55, "Krister", "Persson", 1.77, 73);
+                personHandler.CreatePerson(88, "Nils", "Svensson", 1.95, 105);
+
 
             }
             catch (ArgumentException ex)
