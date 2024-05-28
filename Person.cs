@@ -27,5 +27,16 @@ namespace Task3
                 }
             } 
         }
+        public required string FName
+        {
+            get { return _fName; }
+            set
+            {
+                if (value.Length < 2 || value.Length > 10)
+                    throw new ArgumentException("First name cannot be less than 2 or longer than 10 characters");
+                else
+                    _fName = value;
+            }
+        }
     }
 }
