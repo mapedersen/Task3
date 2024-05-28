@@ -12,5 +12,17 @@ namespace Task3
         {
             person.Age = age;
         }
+        public Person CreatePerson(int age, string fName, string lName, double height, double weight)
+        {
+            Person person = new Person
+            {
+                Age = age,
+                FName = fName,
+                LName = lName,
+                Height = height,
+                Weight = weight,
+            };
+            return person;
+        }
     }
 }

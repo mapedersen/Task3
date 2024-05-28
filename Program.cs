@@ -8,7 +8,6 @@
             {
                 Person person = new Person
                 {
-                    Age = 15,
                     FName = "Marcus",
                     LName = "Pedersen"
                 };
@@ -19,6 +18,9 @@
             {
                 Console.WriteLine(ex.Message);
             }
+            PersonHandler personHandler = new PersonHandler();
+            personHandler.SetAge(person, 15);
+
         }
     }
 }

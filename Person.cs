@@ -57,5 +57,15 @@ namespace Task3
                 }
             }
         }
+        public double Height
+        {
+            get { return _height; }
+            set { _height = value; }
+        }
+        public double Weight 
+        { 
+            get { return _weight; }
+            set { _weight = value; }
+        }
     }
 }
