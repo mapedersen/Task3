@@ -48,8 +48,13 @@ namespace Task3
             set
             {
                 if (value.Length < 3 || value.Length > 15)
+                {
                     throw new ArgumentException("Last name cannot be less than or longer than 15 characters");
-                else _lName = value;
+                }
+                else
+                {
+                    _lName = value;
+                }
             }
         }
     }
