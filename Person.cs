@@ -11,8 +11,8 @@ namespace Task3
         private int _age;
         private string _fName;
         private string _lName;
-        private int _height;
-        private int _weight;
+        private double _height;
+        private double _weight;
 
         public int Age
         {
