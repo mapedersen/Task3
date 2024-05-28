@@ -8,5 +8,9 @@ namespace Task3
 {
     internal class PersonHandler
     {
+        public void SetAge(Person person, int age)
+        {
+            person.Age = age;
+        }
     }
 }
