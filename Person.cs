@@ -14,10 +14,10 @@ namespace Task3
         private int _height;
         private int _weight;
 
-        public int Age 
+        public int Age
         {
             get { return _age; }
-            set 
+            set
             {
                 if (value < 0)
                     throw new ArgumentException("Age cannot be less than 0");
@@ -25,7 +25,7 @@ namespace Task3
                 {
                     _age = value;
                 }
-            } 
+            }
         }
         public required string FName
         {
@@ -34,8 +34,17 @@ namespace Task3
             {
                 if (value.Length < 2 || value.Length > 10)
                     throw new ArgumentException("First name cannot be less than 2 or longer than 10 characters");
-                else
-                    _fName = value;
+                else _fName = value;
+            }
+        }
+        public required string LName
+        {
+            get { return _lName; }
+            set
+            {
+                if (value.Length < 3 || value.Length > 15)
+                    throw new ArgumentException("Last name cannot be less than or longer than 15 characters");
+                else _lName = value;
             }
         }
     }

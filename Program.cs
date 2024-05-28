@@ -9,19 +9,16 @@
                 Person person = new Person
                 {
                     Age = 15,
-                    FName = "Marcus"
+                    FName = "Marcus",
+                    LName = "Pedersen"
                 };
-                Console.WriteLine($"Persons age is {person.Age} years old and the first-name is {person.FName}");
+
+                Console.WriteLine($"{person.FName} {person.LName} is {person.Age} years old");
             }
             catch (ArgumentException ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.StackTrace);
-            }
-            
         }
     }
 }
