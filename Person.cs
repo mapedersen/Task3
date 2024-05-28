@@ -33,8 +33,13 @@ namespace Task3
             set
             {
                 if (value.Length < 2 || value.Length > 10)
+                {
                     throw new ArgumentException("First name cannot be less than 2 or longer than 10 characters");
-                else _fName = value;
+                }
+                else
+                {
+                    _fName = value;
+                }
             }
         }
         public required string LName
