@@ -1,4 +1,7 @@
-﻿namespace Task3
+﻿using System.Security.Cryptography.X509Certificates;
+using Task3.ErrorHandling;
+
+namespace Task3
 {
     internal class Program
     {
@@ -32,6 +35,10 @@
             {
                 Console.WriteLine(ex.Message);
             }
+
+            // List of user errors
+            List<UserError> errors = new List<UserError>();
+            
 
         }
     }
