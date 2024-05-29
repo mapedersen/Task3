@@ -10,7 +10,7 @@ namespace Task3.ErrorHandling
     {
         public override string UEMessage()
         {
-            throw new Exception("You tried to use a text input in a numeric only field. This fired an error!");
+            return "You tried to use a text input in a numeric only field. This fired an error!";
         }
     }
 }

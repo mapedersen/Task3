@@ -37,9 +37,11 @@ namespace Task3
             }
 
             // List of user errors
-            List<UserError> errors = new List<UserError>();
-            
-
+            List<UserError> errors = [new NumericInputError(), new TextInputError()];
+            foreach (UserError error in errors)
+            {
+                Console.WriteLine(error.UEMessage());
+            }
         }
     }
 }
