@@ -11,6 +11,7 @@ namespace Task3.Animals
         public bool IsRideAble { get; set; }
         public Horse(string name, int age, double weight) : base(name, age, weight) 
         { 
+            IsRideAble = true;
         }
         internal override void DoSound()
         {
