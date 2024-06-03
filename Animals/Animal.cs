@@ -20,7 +20,10 @@ namespace Task3
             Age = age;
             Weight = weight;
         }
-        public abstract string Stats();
+        public virtual string Stats()
+        {
+            return $"Name: {Name}, Age: {Age}, Weight: {Weight}";
+        }
     }
 }
 
