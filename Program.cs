@@ -76,6 +76,14 @@ namespace Task3
             foreach (Animal animal in animals)
             {
                 Console.WriteLine(animal.GetType().Name + " " + animal.Stats());
+                // Det som händer här är att vi loopar över alla animals i listan animal och först printar
+                // ut ut namnet på klassen med hjälp av inbyggda metoder som finns på objekten och sedan
+                // anropar vi Stats() metoden som skriver ut klassens properties
+            }
+
+            foreach(Dog dog in dogs)
+            {
+                Console.WriteLine(dog.Stats());
             }
         }
     }
