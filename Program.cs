@@ -54,6 +54,7 @@ namespace Task3
 
             foreach (Animal animal in animals)
             {
+                Console.WriteLine("");
                 Console.WriteLine(animal.GetType().Name);
                 animal.DoSound();
 
@@ -80,6 +81,7 @@ namespace Task3
 
             foreach (Animal animal in animals)
             {
+                Console.WriteLine("");
                 Console.WriteLine(animal.GetType().Name + " " + animal.Stats());
                 // Det som händer här är att vi loopar över alla animals i listan animal och först printar
                 // ut ut namnet på klassen med hjälp av inbyggda metoder som finns på objekten och sedan
@@ -88,6 +90,7 @@ namespace Task3
 
             foreach(Dog dog in dogs)
             {
+                Console.WriteLine("");
                 Console.WriteLine(dog.Stats());
             }
         }
