@@ -18,6 +18,11 @@ namespace Task3.Animals.Birds
         {
             Console.WriteLine("Feeeeee-beeeeeee");
         }
+
+        public override string Stats()
+        {
+            return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Can sing: {CanSing}";
+        }
     }
 }
 
