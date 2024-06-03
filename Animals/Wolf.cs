@@ -8,15 +8,20 @@ namespace Task3.Animals
 {
     internal class Wolf : Animal
     {
-        public bool IsKiller { get; protected set; }
+        public bool IsAKiller { get; protected set; }
         public Wolf(string name, int age, double weight) : base(name, age, weight)
         {
-            IsKiller = true;
+            IsAKiller = true;
         }
 
         internal override void DoSound()
         {
             Console.WriteLine("owooooo");
+        }
+
+        public override string Stats()
+        {
+            return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Is a killer: {IsAKiller}";
         }
     }
 }

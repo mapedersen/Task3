@@ -19,7 +19,8 @@ namespace Task3
             Name = name;
             Age = age;
             Weight = weight;
-        }   
+        }
+        public abstract string Stats();
     }
 }
 

@@ -18,5 +18,10 @@ namespace Task3.Animals
         {
             Console.WriteLine("Hedgehog says: give me milk");
         }
+
+        public override string Stats()
+        {
+            return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Is pointy: {IsPointy}";
+        }
     }
 }

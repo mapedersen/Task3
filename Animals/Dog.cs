@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,6 +20,11 @@ namespace Task3.Animals
         internal override void DoSound()
         {
             Console.WriteLine("WoffWoff");
+        }
+
+        public override string Stats()
+        {
+            return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Is a pet: {IsAPet}";
         }
     }
 }

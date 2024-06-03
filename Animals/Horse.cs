@@ -13,9 +13,15 @@ namespace Task3.Animals
         { 
             IsRideAble = true;
         }
+
         internal override void DoSound()
         {
             Console.WriteLine("geeeehegeeeehegeeeehe");
+        }
+
+        public override string Stats()
+        {
+            return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Is rideable: {IsRideAble}";
         }
     }
 }
