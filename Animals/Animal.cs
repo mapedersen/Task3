@@ -22,3 +22,5 @@ namespace Task3
         }   
     }
 }
+
+//Om alla nya djur behöver en ny egenskap lägger vi till det här
