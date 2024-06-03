@@ -22,6 +22,6 @@ namespace Task3.Animals.Birds
 }
 
 
-// Om vi kommer fram till att samtliga fåglar behöver ett nytt attribut implementerar
+// Om vi kommer fram till att samtliga fåglar behöver en ny egenskap implementerar
 // vi det här då fåglarna ärver från denna klass, det innebär att vi inte behöver lägga
 // till det hos varje enskild fågeltyp.
