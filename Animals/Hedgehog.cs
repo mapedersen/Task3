@@ -21,7 +21,7 @@ namespace Task3.Animals
 
         public override string Stats()
         {
-            return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Is pointy: {IsPointy}";
+            return $"{base.Stats()}, Is pointy: {IsPointy}";
         }
     }
 }

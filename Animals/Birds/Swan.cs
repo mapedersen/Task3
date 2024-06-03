@@ -15,7 +15,7 @@ namespace Task3.Animals.Birds
         }
         public override string Stats()
         {
-            return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Is a common animal: {IsACommonAnimal}";
+            return $"{base.Stats()}, Is a common animal: {IsACommonAnimal}";
         }
     }
 }

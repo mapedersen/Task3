@@ -20,7 +20,7 @@ namespace Task3.Animals
         }
         public override string Stats()
         {
-            return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Is fishfood: {IsFishFood}";
+            return $"{base.Stats()}, Is fishfood: {IsFishFood}";
         }
     }
 }

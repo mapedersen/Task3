@@ -15,7 +15,7 @@ namespace Task3.Animals.Birds
         }
         public override string Stats()
         {
-            return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Is pink: {IsPink}";
+            return $"{base.Stats()}, Is pink: {IsPink}";
         }
     }
 }

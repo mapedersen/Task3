@@ -15,7 +15,7 @@ namespace Task3.Animals.Birds
         }
         public override string Stats()
         {
-            return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Is exotic: {IsExotic}";
+            return $"{base.Stats()}, Is exotic: {IsExotic}";
         }
     }
 }

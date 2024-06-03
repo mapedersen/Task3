@@ -21,7 +21,7 @@ namespace Task3.Animals.Birds
 
         public override string Stats()
         {
-            return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Can sing: {CanSing}";
+            return $"{base.Stats()}, Can sing: {CanSing}";
         }
     }
 }
