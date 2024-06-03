@@ -73,7 +73,10 @@ namespace Task3
                 //För att alla klasser ska kunna läggas till behöver listan vara av typen Objekt
             };
 
-
+            foreach (Animal animal in animals)
+            {
+                Console.WriteLine(animal.GetType().Name + " " + animal.Stats());
+            }
         }
     }
 }
