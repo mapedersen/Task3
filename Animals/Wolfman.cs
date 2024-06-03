@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Task3.Animals;
 
-namespace Task3
+namespace Task3.Animals
 {
     internal class Wolfman : Wolf, IPerson
     {

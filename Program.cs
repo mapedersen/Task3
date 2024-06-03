@@ -48,13 +48,19 @@ namespace Task3
             {
                 new Dog("Allan", 4, 30.2),
                 new Horse("Asterix", 15, 560),
-                new Wolf("Weezie", 6, 45.5)
+                new Wolf("Weezie", 6, 45.5),
+                new Wolfman("Wolfman", 45, 99)
             };
 
             foreach (Animal animal in animals)
             {
                 Console.WriteLine(animal.GetType().Name);
                 animal.DoSound();
+
+                if (animal is IPerson person)
+                {
+                    person.Talk();
+                }
             }
         }
     }
