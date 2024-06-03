@@ -12,7 +12,7 @@ namespace Task3
         public int Age { get; set; }
         public double Weight { get; set; }
 
-        internal abstract string DoSound();
+        internal abstract void DoSound();
 
         public Animal(string name, int age, double weight)
         {

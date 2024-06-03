@@ -54,7 +54,7 @@ namespace Task3
             foreach (Animal animal in animals)
             {
                 Console.WriteLine(animal.Stats());
-                Console.WriteLine(animal.DoSound());
+                animal.DoSound();
             }
         }
     }
