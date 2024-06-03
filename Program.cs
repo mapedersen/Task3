@@ -61,6 +61,11 @@ namespace Task3
                 {
                     person.Talk();
                 }
+
+                if(animal is Dog dog)
+                {
+                    Console.WriteLine(dog.DogPoem());
+                }
             }
 
             List<Dog> dogs = new List<Dog>

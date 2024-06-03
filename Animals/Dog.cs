@@ -26,5 +26,11 @@ namespace Task3.Animals
         {
             return $"{base.Stats()}, Is a pet: {IsAPet}";
         }
+
+        // Den här metoden kommer jag inte åt från Animals listan pga att den är definierad här.
+        public string DogPoem()
+        {
+            return "Faithful friend with wagging tail, unconditional love never fails.";
+        }
     }
 }
