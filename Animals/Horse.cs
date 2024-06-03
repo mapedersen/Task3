@@ -8,7 +8,7 @@ namespace Task3.Animals
 {
     internal class Horse : Animal
     {
-        public bool IsRideAble { get; set; }
+        public bool IsRideAble { get; protected set; }
         public Horse(string name, int age, double weight) : base(name, age, weight) 
         { 
             IsRideAble = true;

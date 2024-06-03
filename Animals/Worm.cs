@@ -6,19 +6,17 @@ using System.Threading.Tasks;
 
 namespace Task3.Animals
 {
-    internal class Dog : Animal
+    internal class Worm : Animal
     {
-        //Properties
         public bool IsAPet { get; protected set; }
-
-        //Constructor
-        public Dog(string name, int age, double weight) : base(name, age, weight)
+        public Worm(string name, int age, double weight) : base(name, age, weight)
         {
-            IsAPet = true;
+            IsAPet = false;
         }
+
         internal override void DoSound()
         {
-            Console.WriteLine("WoffWoff");
+            Console.WriteLine("Worm says: -no sound found-");
         }
     }
 }
