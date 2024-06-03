@@ -62,6 +62,18 @@ namespace Task3
                     person.Talk();
                 }
             }
+
+            List<Dog> dogs = new List<Dog>
+            {
+                new Dog("Zilas", 6, 24.5),
+                new Dog("Åke", 4, 29.5),
+                new Dog("Dino", 2, 24.5),
+                //new Horse("Gentleman", 22, 459)
+                //Det går inte att lägga till häst då typen inte är giltig för den skapade listan. Endast hundar godtages
+                //För att alla klasser ska kunna läggas till behöver listan vara av typen Objekt
+            };
+
+
         }
     }
 }
