@@ -1,4 +1,5 @@
 ﻿using System.Security.Cryptography.X509Certificates;
+using Task3.Animals;
 using Task3.ErrorHandling;
 
 namespace Task3
@@ -41,6 +42,19 @@ namespace Task3
             foreach (UserError error in errors)
             {
                 Console.WriteLine(error.UEMessage());
+            }
+
+            List<Animal> animals = new List<Animal>
+            {
+                new Dog("Allan", 4, 30.2),
+                new Horse("Asterix", 15, 560),
+                new Wolf("Weezie", 6, 45.5)
+            };
+
+            foreach (Animal animal in animals)
+            {
+                Console.WriteLine(animal.Stats());
+                Console.WriteLine(animal.DoSound());
             }
         }
     }
